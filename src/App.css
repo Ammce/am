@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(
+        to right,
+        rgba(15, 12, 41, 0.99),
+        rgba(48, 43, 99, 0.99),
+        rgba(53, 109, 146, 0.75)
+      )
+      no-repeat center center fixed,
+    url('/back.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.App {
+  text-align: center;
+}
