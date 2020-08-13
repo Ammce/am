@@ -22,8 +22,9 @@ function index() {
               SQL & NoSQL DBs <br /> REST & GraphQL <br /> AWS
             </p>
             <a
-              href='https://srv-file18.gofile.io/download/DSgHsD/Amel%20Muminovic%20CV%202020%20-%20Updated.pdf'
+              href='https://drive.google.com/file/d/1n2npIeEApiUYoOYf_3KbstVNVwIuKDyP/view?usp=sharing'
               type='submit'
+              target='_blank'
               name=''
               value='Download CV'
             >
