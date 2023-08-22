@@ -1,37 +1,42 @@
-import React from 'react';
+import React from "react";
 
-import './SocialIcons.css';
+import "./SocialIcons.css";
 
 function SocialIcons() {
   return (
-    <div className='social-icons'>
+    <div className="social-icons">
       <ul>
-        <li className='icon-circle'>
-          <a target='_blank' href='https://github.com/ammce'>
-            <i className='fa fa-github' aria-hidden='true'></i>
+        <li className="icon-circle">
+          <a target="_blank" href="https://github.com/ammce">
+            <i className="fa fa-github" aria-hidden="true"></i>
           </a>
         </li>
-        <li className='icon-circle'>
+        <li className="icon-circle">
           <a
-            target='_blank'
-            href='https://www.linkedin.com/in/amel-muminovic-b5878173/'
+            target="_blank"
+            href="https://www.linkedin.com/in/amel-muminovic-b5878173/"
           >
-            <i className='fa fa-linkedin' aria-hidden='true'></i>
+            <i className="fa fa-linkedin" aria-hidden="true"></i>
           </a>
         </li>
-        <li className='icon-circle'>
-          <a target='_blank' href='https://www.facebook.com/Ammmce/'>
-            <i className='fa fa-facebook' aria-hidden='true'></i>
+        <li className="icon-circle">
+          <a target="_blank" href="https://www.facebook.com/Ammmce/">
+            <i className="fa fa-facebook" aria-hidden="true"></i>
           </a>
         </li>
-        <li className='icon-circle'>
-          <a target='_blank' href='https://twitter.com/HighSerendipity'>
-            <i className='fa fa-twitter' aria-hidden='true'></i>
+        <li className="icon-circle">
+          <a target="_blank" href="https://twitter.com/HighSerendipity">
+            <i className="fa fa-twitter" aria-hidden="true"></i>
           </a>
         </li>
-        <li className='icon-circle'>
-          <a target='_blank' href='https://www.instagram.com/ammce/'>
-            <i className='fa fa-instagram' aria-hidden='true'></i>
+        <li className="icon-circle">
+          <a target="_blank" href="https://www.instagram.com/ammce/">
+            <i className="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li className="icon-circle">
+          <a target="_blank" href="https://medium.com/@ammce">
+            <i className="fa fa-medium" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
