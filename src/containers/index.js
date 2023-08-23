@@ -10,7 +10,7 @@ function index() {
     <div>
       <div className="container register">
         <div className="row">
-          <div className="col-md-3 register-left">
+          <div className="col-md-4 register-left">
             <Image src="https://i.ibb.co/7QwzySS/IMG-4273-jpg-2.jpg" alt="" />
             <h3>Amel Muminovic</h3>
             <ul>
@@ -35,41 +35,7 @@ function index() {
             </a>
             <br />
           </div>
-          <div className="col-md-9 register-right">
-            <ul
-              className="nav nav-tabs nav-justified"
-              id="myTab"
-              role="tablist"
-            >
-              <li className="nav-item">
-                <a
-                  onClick={(e) => e.preventDefault()}
-                  className="nav-link active"
-                  id="home-tab"
-                  data-toggle="tab"
-                  href=""
-                  role="tab"
-                  aria-controls="home"
-                  aria-selected="true"
-                >
-                  Hello
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  onClick={(e) => e.preventDefault()}
-                  className="nav-link"
-                  id="profile-tab"
-                  data-toggle="tab"
-                  href=""
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="false"
-                >
-                  World
-                </a>
-              </li>
-            </ul>
+          <div className="col-md-8 register-right">
             <div className="tab-content" id="myTabContent">
               <div
                 className="tab-pane fade show active"
