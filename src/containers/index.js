@@ -45,7 +45,7 @@ function index() {
               >
                 <h3 className="register-heading">Here's my story</h3>
                 <div className="row register-form">
-                  With over 6 years of commercial experience in diverse web
+                  With over 8 years of commercial experience in diverse web
                   development technologies, I have primarily focused on
                   JavaScript as my coding language for both frontend and backend
                   development. My areas of expertise include Node.js, GraphQL,
