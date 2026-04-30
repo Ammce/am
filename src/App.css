@@ -1,6 +1,9 @@
 body {
   margin: 0;
-  background: #0e0d10;
+  background:
+    radial-gradient(900px 480px at 50% -120px, rgba(232, 168, 124, 0.08), transparent 60%),
+    #0e0d10;
+  background-attachment: fixed;
   color: #e6e3dc;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 17px;

@@ -6,7 +6,7 @@ import "./index.css";
 
 const CAREER_START_YEAR = 2017;
 
-const skills = [
+const coreStack = [
   "Node.js",
   "Go",
   "TypeScript",
@@ -23,19 +23,32 @@ const skills = [
   "System Design",
 ];
 
+const aiStack = [
+  "AI Agents",
+  "Agentic Workflows",
+  "LLMs",
+  "RAG",
+  "Vector Databases",
+  "MCP",
+  "Prompt Engineering",
+  "Tool Use",
+];
+
 function Index() {
   const yearsOfExperience = new Date().getFullYear() - CAREER_START_YEAR;
 
   return (
     <main className="page">
       <header className="hero">
-        <img
-          className="avatar"
-          src="https://drive.google.com/thumbnail?id=1cF3lh2bEtqJt8vuutaP9HBvO1ym5-PYG&sz=w400"
-          alt="Amel Muminovic"
-        />
+        <div className="avatar-wrap">
+          <img
+            className="avatar"
+            src="https://drive.google.com/thumbnail?id=1cF3lh2bEtqJt8vuutaP9HBvO1ym5-PYG&sz=w400"
+            alt="Amel Muminovic"
+          />
+        </div>
         <h1 className="name">Amel Muminovic</h1>
-        <p className="role">Senior Full Stack Engineer</p>
+        <p className="role">Senior Full Stack Engineer · Product Engineer</p>
       </header>
 
       <section className="section">
@@ -50,9 +63,9 @@ function Index() {
           As a product engineer, I work at the intersection of software
           development, user experience, and scalable architecture, often
           incorporating AI-driven and agentic AI solutions to elevate product
-          functionality. I’m driven by curiosity and a commitment to
-          continuous learning, always seeking new ways to build thoughtful,
-          high-impact software.
+          functionality. I’m driven by curiosity and a commitment to continuous
+          learning, always seeking new ways to build thoughtful, high-impact
+          software.
         </p>
         <a
           className="cv-link"
@@ -66,13 +79,26 @@ function Index() {
 
       <section className="section">
         <h2 className="section-title">Technologies</h2>
-        <ul className="chips">
-          {skills.map((s) => (
-            <li key={s} className="chip">
-              {s}
-            </li>
-          ))}
-        </ul>
+        <div className="chip-group">
+          <span className="chip-group-label">Engineering</span>
+          <ul className="chips">
+            {coreStack.map((s) => (
+              <li key={s} className="chip">
+                {s}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="chip-group">
+          <span className="chip-group-label">AI &amp; Agentic</span>
+          <ul className="chips chips-ai">
+            {aiStack.map((s) => (
+              <li key={s} className="chip">
+                {s}
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       <section className="section">
