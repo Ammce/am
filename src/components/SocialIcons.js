@@ -2,45 +2,35 @@ import React from "react";
 
 import "./SocialIcons.css";
 
+const links = [
+  { label: "GitHub", href: "https://github.com/ammce" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/amel-muminovic-b5878173/",
+  },
+  { label: "Twitter", href: "https://twitter.com/HighSerendipity" },
+  { label: "Medium", href: "https://medium.com/@ammce" },
+  { label: "Instagram", href: "https://www.instagram.com/ammce/" },
+  { label: "Email", href: "mailto:amel.muminovic@maze.design" },
+];
+
 function SocialIcons() {
   return (
-    <div className="social-icons">
-      <ul>
-        <li className="icon-circle">
-          <a target="_blank" href="https://github.com/ammce">
-            <i className="fa fa-github" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li className="icon-circle">
+    <ul className="social-links">
+      {links.map((l) => (
+        <li key={l.label}>
           <a
+            className="social-link"
+            href={l.href}
             target="_blank"
-            href="https://www.linkedin.com/in/amel-muminovic-b5878173/"
+            rel="noopener noreferrer"
           >
-            <i className="fa fa-linkedin" aria-hidden="true"></i>
+            <span className="social-label">{l.label}</span>
+            <span className="social-arrow">↗</span>
           </a>
         </li>
-        <li className="icon-circle">
-          <a target="_blank" href="https://www.facebook.com/Ammmce/">
-            <i className="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li className="icon-circle">
-          <a target="_blank" href="https://twitter.com/HighSerendipity">
-            <i className="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li className="icon-circle">
-          <a target="_blank" href="https://www.instagram.com/ammce/">
-            <i className="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li className="icon-circle">
-          <a target="_blank" href="https://medium.com/@ammce">
-            <i className="fa fa-medium" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+      ))}
+    </ul>
   );
 }
 

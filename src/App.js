@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Button } from 'react-bootstrap';
-
 import Index from './containers/index';
 
 import './App.css';

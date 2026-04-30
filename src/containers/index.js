@@ -1,72 +1,90 @@
 import React from "react";
-import { Image } from "react-bootstrap";
 
 import SocialIcons from "../components/SocialIcons";
 
 import "./index.css";
 
-function index() {
+const CAREER_START_YEAR = 2017;
+
+const skills = [
+  "Node.js",
+  "Go",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "GraphQL",
+  "gRPC",
+  "PostgreSQL",
+  "Redis",
+  "AWS",
+  "Docker",
+  "Kubernetes",
+  "Terraform",
+  "System Design",
+];
+
+function Index() {
+  const yearsOfExperience = new Date().getFullYear() - CAREER_START_YEAR;
+
   return (
-    <div>
-      <div className="container register">
-        <div className="row">
-          <div className="col-md-4 register-left">
-            <Image src="https://i.ibb.co/7QwzySS/IMG-4273-jpg-2.jpg" alt="" />
-            <h3>Amel Muminovic</h3>
-            <ul>
-              <li>Senior Full Stack Engineer</li>
-              <li>Node.js | Go</li>
-              <li>React.js | Next.js</li>
-              <li>SQL | NoSQL | Graph DBs</li>
-              <li>REST | GraphQL | gRPC</li>
-              <li>AWS | Docker</li>
-              <li>Kubernetes | Terraform</li>
-              <li>System Design</li>
-            </ul>
-            <a
-              href="https://drive.google.com/file/d/12QFqNM2AeuL0yCFF6pplfPnMb0mSUAF0/view?usp=sharing"
-              type="submit"
-              target="_blank"
-              name=""
-              value="Download CV"
-            >
-              {" "}
-              Download CV{" "}
-            </a>
-            <br />
-          </div>
-          <div className="col-md-8 register-right">
-            <div className="tab-content" id="myTabContent">
-              <div
-                className="tab-pane fade show active"
-                id="home"
-                role="tabpanel"
-                aria-labelledby="home-tab"
-              >
-                <h3 className="register-heading">Here's my story</h3>
-                <div className="row register-form">
-                  With over 8 years of commercial experience in diverse web
-                  development technologies, I have primarily focused on
-                  JavaScript as my coding language for both frontend and backend
-                  development. My areas of expertise include Node.js, GraphQL,
-                  React.js, and Golang. I am deeply enthusiastic about acquiring
-                  new knowledge and staying abreast of the latest technological
-                  advancements to ensure the delivery of top-notch code and
-                  products. Recently, I have developed a strong passion for
-                  Golang and I am eager to engage in projects where Go serves as
-                  the primary language.
-                </div>
-                <div>
-                  <h4 className="lets-connect-heading">Lets connect</h4>
-                  <SocialIcons />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <main className="page">
+      <header className="hero">
+        <img
+          className="avatar"
+          src="https://drive.google.com/thumbnail?id=1cF3lh2bEtqJt8vuutaP9HBvO1ym5-PYG&sz=w400"
+          alt="Amel Muminovic"
+        />
+        <h1 className="name">Amel Muminovic</h1>
+        <p className="role">Senior Full Stack Engineer</p>
+      </header>
+
+      <section className="section">
+        <h2 className="section-title">About</h2>
+        <p className="about">
+          With over {yearsOfExperience} years of professional experience in
+          software development and a Master’s degree in Computer Engineering,
+          I’ve developed deep expertise in building robust systems using
+          Node.js, GraphQL, React, and Golang.
+        </p>
+        <p className="about">
+          As a product engineer, I work at the intersection of software
+          development, user experience, and scalable architecture, often
+          incorporating AI-driven and agentic AI solutions to elevate product
+          functionality. I’m driven by curiosity and a commitment to
+          continuous learning, always seeking new ways to build thoughtful,
+          high-impact software.
+        </p>
+        <a
+          className="cv-link"
+          href="https://drive.google.com/file/d/1w1CWYhJShtU80-er99fx1kCry6eGHwOy/preview"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV →
+        </a>
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">Technologies</h2>
+        <ul className="chips">
+          {skills.map((s) => (
+            <li key={s} className="chip">
+              {s}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">Elsewhere</h2>
+        <SocialIcons />
+      </section>
+
+      <footer className="footer">
+        <span>© {new Date().getFullYear()} Amel Muminovic</span>
+      </footer>
+    </main>
   );
 }
 
-export default index;
+export default Index;
