@@ -178,6 +178,10 @@
   .page {
     padding: 56px 20px 48px;
   }
+  .avatar-wrap {
+    width: 104px;
+    height: 104px;
+  }
   .name {
     font-size: 38px;
   }

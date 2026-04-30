@@ -11,7 +11,7 @@ const links = [
   { label: "Twitter", href: "https://twitter.com/HighSerendipity" },
   { label: "Medium", href: "https://medium.com/@ammce" },
   { label: "Instagram", href: "https://www.instagram.com/ammce/" },
-  { label: "Email", href: "mailto:amel.muminovic@maze.design" },
+  { label: "Email", href: "mailto:amcenp@gmail.com" },
 ];
 
 function SocialIcons() {
